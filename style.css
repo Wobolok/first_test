@@ -434,3 +434,127 @@ main {
   font-size: 2rem;
   line-height: 142%;
 }
+
+.reviews {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem;
+}
+
+.reviews__wrapper__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.reviews__wrapper__title__name {
+  font-size: 5.9rem;
+  line-height: 124%;
+  text-align: center;
+}
+
+.reviews__wrapper__title__desc {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 142%;
+  text-align: center;
+  color: var(--gray300);
+}
+
+.reviews__wrapper__body {
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 3rem;
+}
+
+.reviews__wrapper__body__card {
+  padding: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5rem;
+  background-color: var(--beige200);
+}
+
+.reviews__wrapper__body__card__content {
+  font-size: 2.3rem;
+  line-height: 122%;
+}
+
+.reviews__wrapper__body__card__footer {
+  padding-top: 7rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.reviews__wrapper__body__card__footer__data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.reviews__wrapper__body__card__footer__data__name {
+  font-weight: 500;
+  font-size: 3.5rem;
+  line-height: 122%;
+}
+
+.reviews__wrapper__body__card__footer__data__tour {
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 142%;
+  color: var(--gray300);
+}
+
+.reviews__wrapper__body__card__footer__photo, .reviews__wrapper__body__card__footer__photo img {
+  aspect-ratio: 1;
+  width: 7.5rem;
+  clip-path: circle();
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem;
+}
+
+.photos__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.photos__title__name {
+  font-size: 5.9rem;
+  line-height: 124%;
+  text-align: center;
+}
+
+.photos__title__desc {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 142%;
+  text-align: center;
+  color: var(--gray300);
+}
+
+.photos__body {
+
+}
+
