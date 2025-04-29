@@ -9,17 +9,16 @@
   <title>YourTour</title>
 </head>
 <body>
-  <header></header>
   <main>
     <div class="billboard">
       <div class="billboard__header">
         <div class="header__wrapper">
           <img src="./src/YourTour.svg" alt="">
           <div class="header__nav">
-            <a class="header__nav__link" href="">Туры</a>
-            <a class="header__nav__link" href="">Создать тур</a>
-            <a class="header__nav__link" href="">Отзывы</a>
-            <a class="header__nav__link" href="">Истории</a>
+            <a class="header__nav__link" href="#">Туры</a>
+            <a class="header__nav__link" href="#">Создать тур</a>
+            <a class="header__nav__link" href="#">Отзывы</a>
+            <a class="header__nav__link" href="#">Истории</a>
           </div>
           <div class="header__number">
             +7 999 999 99 99
@@ -29,7 +28,7 @@
       <div class="billboard__content">
         <h1 class="billboard__content__title">Идеальные путешествия существуют</h1>
         <p class="billboard__content__desc">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-        <a class="billboard__content__link" href="">Найти тур</a>
+        <a class="billboard__content__link" href="#">Найти тур</a>
       </div>
     </div>
     <div class="tour">
@@ -37,11 +36,11 @@
         <div class="tour__wrapper__title">
           Выбери свой тур
           <div class="tour__wrapper__title__types">
-            <a class="tour__wrapper__title__types__link" href="">Популярные</a>
-            <a class="tour__wrapper__title__types__link" href="">Авторские</a>
-            <a class="tour__wrapper__title__types__link" href="">Походы</a>
-            <a class="tour__wrapper__title__types__link" href="">Сплавы</a>
-            <a class="tour__wrapper__title__types__link" href="">Велопрогулки</a>
+            <a class="tour__wrapper__title__types__link" href="#">Популярные</a>
+            <a class="tour__wrapper__title__types__link" href="#">Авторские</a>
+            <a class="tour__wrapper__title__types__link" href="#">Походы</a>
+            <a class="tour__wrapper__title__types__link" href="#">Сплавы</a>
+            <a class="tour__wrapper__title__types__link" href="#">Велопрогулки</a>
           </div>
         </div>
         <div class="tour__wrapper__tours">
@@ -152,8 +151,11 @@
             </div>
             <div class="create_tour__wrapper__body__field">
               <div class="create_tour__wrapper__body__field__label">Направление</div>
-              <select name="" id="">
-                <option>Куда хотите ехать</option>
+              <select>
+                <option value="" disabled selected hidden>Куда хотите ехать</option>
+                <option value="Стамбул">Стамбул</option>
+                <option value="Стамбул">Стамбул</option>
+                <option value="Стамбул">Стамбул</option>
               </select>
             </div>
           </div>
@@ -197,7 +199,7 @@
               <label for="no"><input id="no" type="radio" name="age" />Нет</label>
             </div>
           </div>
-          <label for="agreement" style="align-self: self-start;"><input id="agreement" type="checkbox"><span>Нажимая кнопку, я принимаю условия </span>Лицензионного договора</label>
+          <label class="agreement__label" for="agreement" style="align-self: self-start;"><input id="agreement" type="checkbox">Нажимая кнопку, я принимаю условия <span>Лицензионного договора</span></label>
           <div
             style="
               width: 50rem;
@@ -207,8 +209,8 @@
               gap: 3rem;
             "
           >
-            <button>Найти тур</button>
-            <button style="background-color: var(--green100); color: var(--green400);">Сбросить</button>
+            <button class="create__tour__find">Найти тур</button>
+            <button class="create__tour__reset">Сбросить</button>
           </div>
         </div>
       </div>
@@ -254,10 +256,133 @@
         <div class="photos__title__desc">Идейные соображения высшего порядка,<br>а также рамки и место обучения кадров</div>
       </div>
       <div class="photos__body">
-        <img src="" alt="">
+        <div class="photos__body__row photos__body__first-row">
+          <img src="./src/travel photo-1.jpg" alt="">
+          <img src="./src/travel photo-2.jpg" alt="">
+          <img src="./src/travel photo-3.jpg" alt="">
+          <img src="./src/travel photo-4.jpg" alt="">
+        </div>
+        <div class="photos__body__row photos__body__second-row">
+          <img src="./src/travel photo-5.jpg" alt="">
+          <img src="./src/travel photo-6.jpg" alt="">
+          <img src="./src/travel photo-7.jpg" alt="">
+          <img src="./src/travel photo-8.png" alt="">
+          <img src="./src/travel photo-9.jpg" alt="">
+        </div>
+        <div class="photos__body__row photos__body__third-row">
+          <img src="./src/travel photo-10.jpg" alt="">
+          <img src="./src/travel photo-11.jpg" alt="">
+          <img src="./src/travel photo-12.jpg" alt="">
+          <img src="./src/travel photo-13.jpg" alt="">
+        </div>
       </div>
     </div>
+    <div class="histories">
+      <div class="histories__wrapper">
+        <div class="histories__wrapper__title">
+          <div class="histories__wrapper__title__name">Истории путешествий</div>
+          <div class="histories__wrapper__title__desc">Идейные соображения высшего порядка,<br>а также рамки и место обучения кадров</div>
+        </div>
+        <div class="histories__wrapper__body">
+          <div class="histories__wrapper__body__card">
+            <img src="./src/story photo-1.jpg" alt="">
+            <div class="histories__wrapper__body__card__content">
+              <div class="histories__wrapper__body__card__content__top">
+                <div class="histories__wrapper__body__card__content__top__title">Автостопом в Стамбул</div>
+                <div class="histories__wrapper__body__card__content__top__desc">
+                  Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:
+                  <ul>
+                    <li>вкусная еда</li>
+                    <li>дешевый транспорт</li>
+                    <li>красивый город.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="histories__wrapper__body__card__content__bottom">
+                <div class="histories__wrapper__body__card__content__bottom__link">
+                  Подробнее
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26">
+                    <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
+                  </svg>
+                </div>
+                <div class="histories__wrapper__body__card__content__bottom__references">
+                  <a class="histories__wrapper__body__card__content__bottom__references__item" href="#">telegram</a>
+                  <a class="histories__wrapper__body__card__content__bottom__references__item" href="#">facebook</a>
+                  <a class="histories__wrapper__body__card__content__bottom__references__item" href="#">YouTube</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="histories__wrapper__body__card">
+            <img src="./src/story photo-2.jpg" alt="">
+            <div class="histories__wrapper__body__card__content">
+              <div class="histories__wrapper__body__card__content__top">
+                <div class="histories__wrapper__body__card__content__top__title">Автостопом в Стамбул</div>
+                <div class="histories__wrapper__body__card__content__top__desc">
+                  Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.
+                </div>
+              </div>
+              <div class="histories__wrapper__body__card__content__bottom">
+                <div class="histories__wrapper__body__card__content__bottom__link">
+                  Подробнее
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26">
+                    <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
+                  </svg>
+                </div>
+                <div class="histories__wrapper__body__card__content__bottom__references">
+                  <a class="histories__wrapper__body__card__content__bottom__references__item" href="#">telegram</a>
+                  <a class="histories__wrapper__body__card__content__bottom__references__item" href="#">facebook</a>
+                  <a class="histories__wrapper__body__card__content__bottom__references__item" href="#">ВКонтакте</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="histories__wrapper__body__card">
+            <img src="./src/story photo-3.jpg" alt="">
+            <div class="histories__wrapper__body__card__content">
+              <div class="histories__wrapper__body__card__content__top">
+                <div class="histories__wrapper__body__card__content__top__title">Автостопом в Стамбул</div>
+                <div class="histories__wrapper__body__card__content__top__desc">
+                  Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.
+                </div>
+              </div>
+              <div class="histories__wrapper__body__card__content__bottom">
+                <div class="histories__wrapper__body__card__content__bottom__link">
+                  Подробнее
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26">
+                    <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
+                  </svg>
+                </div>
+                <div class="histories__wrapper__body__card__content__bottom__references">
+                  <a class="histories__wrapper__body__card__content__bottom__references__item" href="#">telegram</a>
+                  <a class="histories__wrapper__body__card__content__bottom__references__item" href="#">facebook</a>
+                  <a class="histories__wrapper__body__card__content__bottom__references__item" href="#">ВКонтакте</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ad">
+      <div class="ad__wrapper">
+        <img src="./src/footer photo.jpg" alt="">
+        <div class="ad__wrapper__content">
+          <div class="ad__wrapper__content__title">Пора в путешествие<br>вместе с нами!</div>
+          <div class="ad__wrapper__content__desc">Напиши на почту и узнай подробности<br>на <span>yourtour@gmail.com</span></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="social">
+        Наши социальные сети
+        <div class="social__links">
+          <a href="#"><img src="./src/telegram.png" alt="">telegram</a>
+          <a href="#"><img src="./src/fb.png" alt="">facebook</a>
+          <a href="#"><img src="./src/vk.png" alt="">vkontakte</a>
+        </div>
+      </div>
+    </footer>
   </main>
-  <footer></footer>
 </body>
 </html>
