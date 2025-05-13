@@ -547,6 +547,8 @@ main {
 .reviews__wrapper__body__card__content {
   font-size: 2.3rem;
   line-height: 122%;
+  font-weight: 700;
+  letter-spacing: 0;
 }
 
 .reviews__wrapper__body__card__footer {
@@ -893,4 +895,72 @@ footer {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+@media (width <= 1024px) {
+  body {
+    max-width: 1024px;
+    width: 1024px;
+  }
+
+  .billboard__header {
+    padding: 0;
+  }
+
+  .header__wrapper {
+    width: 910px;
+  }
+
+  .header__nav {
+    gap: 3rem;
+  }
+
+  .billboard__content__desc {
+    text-wrap: balance;
+  }
+
+  .tour__wrapper {
+    width: 1024px;
+  }
+
+  .tour__wrapper__tours {
+    width: 918px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 1.8rem;
+  }
+
+  .tour__wrapper__tours__card {
+    width: 450px;
+  }
+
+  .create_tour__wrapper {
+    width: 1024px;
+  }
+
+  .create_tour__wrapper__body {
+    width: 918px;
+  }
+
+  .create_tour__wrapper__body__group {
+    gap: 2rem;
+  }
+
+  .create_tour__wrapper__body__field {
+    textarea {
+      height: 152px;
+    }
+  }
+
+  .reviews__wrapper__body {
+    gap: 1.8rem;
+  }
+
+  .reviews__wrapper__body__card {
+    width: 450px;
+  }
+
+  .reviews__wrapper__body__card__content {
+    text-wrap: balance;
+  }
 }
