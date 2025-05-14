@@ -10,6 +10,20 @@
 </head>
 <body>
   <main>
+    <div id="fixed_header" class="fixed_header fixed_header__hidden">
+      <div class="fixed_header__wrapper">
+        <img src="./src/YourTour_black.svg" alt="">
+        <div class="fixed_header__nav">
+          <a class="fixed_header__nav__link" href="#">Туры</a>
+          <a class="fixed_header__nav__link" href="#">Создать тур</a>
+          <a class="fixed_header__nav__link" href="#">Отзывы</a>
+          <a class="fixed_header__nav__link" href="#">Истории</a>
+        </div>
+        <div class="fixed_header__number">
+          +7 999 999 99 99
+        </div>
+      </div>
+    </div>
     <div class="billboard">
       <div class="billboard__header">
         <div class="header__wrapper">
@@ -143,7 +157,7 @@
           <div class="create_tour__wrapper__title__name">Собери свой тур</div>
           <div class="create_tour__wrapper__title__desc">Идейные соображения высшего порядка, <br>а также рамки и место обучения кадров</div>
         </div>
-        <div class="create_tour__wrapper__body">
+        <form class="create_tour__wrapper__body">
           <div class="create_tour__wrapper__body__group">
             <div class="create_tour__wrapper__body__field">
               <div class="create_tour__wrapper__body__field__label">Имя</div>
@@ -172,11 +186,11 @@
           <div class="create_tour__wrapper__body__group">
             <div class="create_tour__wrapper__body__field">
               <div class="create_tour__wrapper__body__field__label">Дата от</div>
-              <input type="text" placeholder="ДД.ММ.ГГГГ"/>
+              <input type="date"/>
             </div>
             <div class="create_tour__wrapper__body__field">
               <div class="create_tour__wrapper__body__field__label">Дата до</div>
-              <input type="text" placeholder="ДД.ММ.ГГГГ"/>
+              <input type="date"/>
             </div>
           </div>
           <div class="create_tour__wrapper__body__group">
@@ -199,8 +213,15 @@
               <label for="no"><input id="no" type="radio" name="age" />Нет</label>
             </div>
           </div>
-          <label class="agreement__label" for="agreement" style="align-self: self-start;"><input id="agreement" type="checkbox">Нажимая кнопку, я принимаю условия <span>Лицензионного договора</span></label>
+          <label class="agreement__label" for="agreement" style="align-self: self-start;">
+            <input id="agreement" type="checkbox">
+            <div>
+              Нажимая кнопку, я принимаю условия
+              <span>Лицензионного договора</span>
+            </div>
+          </label>
           <div
+            class="create__tour__wrapper__body__buttons"
             style="
               width: 50rem;
               display: flex;
@@ -210,9 +231,9 @@
             "
           >
             <button class="create__tour__find">Найти тур</button>
-            <button class="create__tour__reset">Сбросить</button>
+            <button class="create__tour__reset" type="reset">Сбросить</button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
     <div class="reviews">
@@ -384,5 +405,6 @@
       </div>
     </footer>
   </main>
+  <script src="./script.js"></script>
 </body>
 </html>
